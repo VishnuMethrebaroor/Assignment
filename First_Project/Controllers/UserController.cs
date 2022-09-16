@@ -34,7 +34,7 @@ namespace First_Project.Controllers
             return Ok(val);
         }
         [HttpPost]
-        public IActionResult AddUser([FromBody] User obj )
+        public IActionResult AddUser([FromBody] User obj)
         {
             obj.Id = Guid.NewGuid();
              _db.Users.Add(obj);
